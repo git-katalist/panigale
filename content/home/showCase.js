@@ -1,7 +1,7 @@
 import image from "../../public/pic1.png";
 // import Image from "next/image";
 
-const prefix = "/panigale";
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 // NOTES //
 const Title = () => {
@@ -13,7 +13,7 @@ const Excerpt = () => {
 
 // NOTES //
 const Image = () => {
-    return <img src={prefix + image} alt="" />;
+    return <img src={image} alt="" />;
 };
 
 // NOTES //
