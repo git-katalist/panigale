@@ -1,10 +1,12 @@
 const withImages = require("next-images");
 
 // module.exports = withImages();
-module.exports = {
+const nextConfig = {
+    basePath: "/",
     images: {
         loader: "imgix",
         path: "/",
     },
-    withImages()
-}
+};
+
+module.exports = withImages([[withImages]], nextConfig);
