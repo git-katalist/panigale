@@ -7,7 +7,7 @@ export default function Home() {
             <Show.Image />
             <Show.Showcase />
             <Show.Excerpt />
-            <h1>Good morning crazy wonderful world</h1>
+            <h1>I just wanna luv you..</h1>
         </>
     );
 }
