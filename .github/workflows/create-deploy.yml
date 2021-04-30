@@ -27,8 +27,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build
+      env:
+       NEXT_PUBLIC_BASE_PATH: /panigale
     - run: npm run export
-
+      env:
+       NEXT_PUBLIC_BASE_PATH: /panigale
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.1
       with:
