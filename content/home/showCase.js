@@ -1,6 +1,8 @@
 import image from "../../public/pic1.png";
 // import Image from "next/image";
 
+const prefix = "/panigale";
+
 // NOTES //
 const Title = () => {
     return <>The Showcase</>;
@@ -11,7 +13,7 @@ const Excerpt = () => {
 
 // NOTES //
 const Image = () => {
-    return <img src={image} alt="" />;
+    return <img src={prefix + image} alt="" />;
 };
 
 // NOTES //
